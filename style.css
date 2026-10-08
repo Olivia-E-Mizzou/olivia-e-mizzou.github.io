@@ -40,3 +40,19 @@ p {
   background-color: #263B50;
   color: #FFFFFF;
 }
+
+/* Services List */
+ul {
+  list-style-type: square;
+  font-size: 18px;
+  color: #263B50;
+  background-color: #AFCBDF;
+  padding: 24px 48px;
+  margin: 20px 0;
+  border: 2px solid #263B50;
+  border-radius: 12px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
