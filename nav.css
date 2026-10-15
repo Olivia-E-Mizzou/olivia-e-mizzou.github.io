@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 16px 32px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+nav a {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 16px;
+  color: #263B50;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #AFCBDF;
+  border-radius: 6px;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
