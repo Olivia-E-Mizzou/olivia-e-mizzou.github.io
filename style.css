@@ -22,6 +22,12 @@ p {
   font-size: 48px;
 }
 
+h2 {
+  color: #263B50;
+  font-size: 28px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
 .hero p {
   color: #263B50;
   font-size: 20px;
@@ -74,6 +80,6 @@ ul li {
 }
 
 /* Indent the first line of every other reflection paragraph */
-.reflection-box p:nth-of-type(even) {
+.reflection-box p:nth-of-type(odd) {
   text-indent: 2em;
 }
