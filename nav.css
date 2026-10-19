@@ -36,3 +36,31 @@ header img {
   width: 180px;
   height: auto;
 }
+
+/* Two-Tier Dropdown Navigation */
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  background-color: #FFFFFF;
+  padding: 8px 0;
+  border: 1px solid #AFCBDF;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+nav .dropdown:hover .dropdown-menu,
+nav .dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+nav .dropdown-menu a {
+  display: block;
+  white-space: nowrap;
+}
