@@ -2,7 +2,8 @@
 <html lang="en">
   <!--
     Name: Olivia Eaton
-    Date: 9/21
+    File: about.html
+    Date: 10/18/2026
     Course: Web Design And Development
     Description: About page for the Liv to Skate website
   -->
@@ -12,14 +13,25 @@
     <title>Liv to Skate | About</title>
     <!-- Link to external CSS for styling -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
   </head>
   <body>
     <!-- Header will contain the logo and navigation -->
     <header>
-      <p>Liv to Skate</p>
+      <img src="logo.png" alt="Liv to Skate logo">
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li class="dropdown">
+            <a href="#">Resources ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="reflection.html">Reflection</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <!-- Main page content will go here -->
@@ -35,6 +47,6 @@
     </ul>
     <p>Liv to Skate offers private figure skating lessons, hockey skills coaching, and off-ice training.</p>
     <!-- Footer contains the author and current date -->
-    <footer>Olivia Eaton | September 21, 2026</footer>
+    <footer>Olivia Eaton | October 18, 2026</footer>
   </body>
 </html>
