@@ -56,3 +56,24 @@ ul {
 ul li {
   margin-bottom: 8px;
 }
+
+/* Reflection Page Box Model */
+.reflection-box {
+  background-color: #AFCBDF;
+  padding: 24px;
+  margin: 24px;
+  border: 2px solid #263B50;
+  border-radius: 12px;
+}
+
+/* Style the first letter of the first reflection paragraph */
+.reflection-box p:first-of-type::first-letter {
+  color: #263B50;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Indent the first line of every other reflection paragraph */
+.reflection-box p:nth-of-type(even) {
+  text-indent: 2em;
+}
