@@ -92,3 +92,26 @@ ul li {
   outline-offset: 4px;
   border-radius: 6px;
 }
+
+/* About Page Media */
+.coach-photo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+  border: 3px solid #263B50;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+}
+
+.resume-video {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 20px 0;
+  border: 3px solid #263B50;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+}
