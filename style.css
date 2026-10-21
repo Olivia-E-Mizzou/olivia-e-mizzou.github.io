@@ -83,3 +83,11 @@ ul li {
 .reflection-box p:nth-of-type(odd) {
   text-indent: 2em;
 }
+
+/* Highlight the selected reflection section */
+.reflection-box p:target {
+  background-color: #FFFFFF;
+  outline: 3px solid #263B50;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
