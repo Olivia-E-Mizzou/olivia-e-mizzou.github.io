@@ -85,7 +85,8 @@ ul li {
 }
 
 /* Highlight the selected reflection section */
-.reflection-box p:target {
+.reflection-box p:target,
+.reflection-box #experience:target + p {
   background-color: #FFFFFF;
   outline: 3px solid #263B50;
   outline-offset: 4px;
