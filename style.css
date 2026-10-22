@@ -114,7 +114,7 @@ ul li {
 }
 
 .video-section {
-  flex: 0 1 300px;
+  flex: 0 1 230px;
 }
 
 .video-section h3 {
@@ -124,8 +124,8 @@ ul li {
 .resume-video {
   display: block;
   width: 100%;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 230px;
+  max-height: 307px;
   height: auto;
   margin: 0;
   border: 3px solid #263B50;
