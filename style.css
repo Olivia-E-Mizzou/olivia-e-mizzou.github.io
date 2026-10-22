@@ -94,23 +94,40 @@ ul li {
 }
 
 /* About Page Media */
+.about-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
 .coach-photo {
   display: block;
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin: 20px 0;
+  margin: 0;
   border: 3px solid #263B50;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
 }
 
+.video-section {
+  flex: 0 1 400px;
+}
+
+.video-section h3 {
+  margin-top: 0;
+}
+
 .resume-video {
   display: block;
   width: 100%;
-  max-width: 640px;
+  max-width: 400px;
+  max-height: 533px;
   height: auto;
-  margin: 20px 0;
+  margin: 0;
   border: 3px solid #263B50;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
