@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
   </head>
-  <body>
+  <body class="about-page">
     <!-- Header will contain the logo and navigation -->
     <header>
       <img src="logo.png" alt="Liv to Skate logo">
@@ -37,7 +37,7 @@
       </nav>
     </header>
     <!-- Main page content will go here -->
-    <h1>About the Coach</h1>
+    <h1><span class="screen-only">About the Coach</span><span class="print-only">Olivia Eaton</span></h1>
   <h2>Meet the Coach</h2>
   <div class="about-media">
     <img class="coach-photo" src="media/olivia-coach-profile.jpg" alt="Olivia Eaton standing beside the ice rink at the Missouri Tigers ice arena">
@@ -49,16 +49,23 @@
       </video>
     </div>
   </div>
-  <p>As a skater myself, my love for the sport is what drives my passion for coaching. Coaching allows me to motivate athletes and build their confidence to help them grow both on and off the ice while working towards their goals. I work with skaters of all ages and levels and focus on making lessons both productive and encouraging.</p>
-    <h3>Services</h3>
-    <ul>
+  <p class="personal-description">As a skater myself, my love for the sport is what drives my passion for coaching. Coaching allows me to motivate athletes and build their confidence to help them grow both on and off the ice while working towards their goals. I work with skaters of all ages and levels and focus on making lessons both productive and encouraging.</p>
+    <ul class="education-details print-only">
+      <li>University of Missouri</li>
+      <li>Web Design and Development coursework</li>
+    </ul>
+    <h3 class="services-heading">Services</h3>
+    <ul class="services-list">
       <li>Private Figure-Skating Lessons</li>
       <li>Hockey-Skills Coaching</li>
       <li>Off-Ice Training</li>
       <li>Choreography</li>
     </ul>
-    <p>Liv to Skate offers private figure skating lessons, hockey skills coaching, and off-ice training.</p>
+    <p class="services-description">Liv to Skate offers private figure skating lessons, hockey skills coaching, and off-ice training.</p>
     <!-- Footer contains the author and current date -->
-    <footer>Olivia Eaton | October 18, 2026</footer>
+    <footer>
+      <span class="screen-only">Olivia Eaton | October 18, 2026</span>
+      <span class="print-only">Website: olivia-e-mizzou.github.io</span>
+    </footer>
   </body>
 </html>
