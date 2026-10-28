@@ -132,3 +132,69 @@ ul li {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
 }
+
+/* Hide print-only content on the regular webpage */
+.print-only {
+  display: none;
+}
+
+/* About Page Print Styles */
+@page {
+  margin: 1in;
+}
+
+@media print {
+  .about-page header,
+  .about-page h2,
+  .about-page .about-media,
+  .about-page .services-heading,
+  .about-page .services-list,
+  .about-page .services-description,
+  .about-page .screen-only {
+    display: none;
+  }
+
+  .about-page .print-only {
+    display: block;
+  }
+
+  .about-page,
+  .about-page h1,
+  .about-page p,
+  .about-page ul,
+  .about-page li,
+  .about-page footer {
+    color: #000000;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .about-page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-page h1 {
+    font-size: 24pt;
+    margin: 0 0 12pt;
+  }
+
+  .about-page .personal-description {
+    font-size: 11pt;
+    line-height: 1.4;
+    margin: 0 0 12pt;
+  }
+
+  .about-page .education-details {
+    font-size: 11pt;
+    margin: 0 0 12pt;
+    padding-left: 20pt;
+  }
+
+  .about-page footer {
+    font-size: 10pt;
+    margin-top: 12pt;
+  }
+}
