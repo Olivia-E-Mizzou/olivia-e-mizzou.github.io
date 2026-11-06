@@ -93,44 +93,162 @@ ul li {
   border-radius: 6px;
 }
 
-/* About Page Media */
-.about-media {
-  display: flex;
-  align-items: flex-start;
+/* About Page CSS Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  grid-template-areas:
+    "photo biography"
+    "services locations"
+    "video video";
   gap: 30px;
-  flex-wrap: wrap;
-  margin: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Shared appearance for the About page sections */
+.about-grid > section {
+  background-color: #F4F8FB;
+  padding: 24px;
+  border: 2px solid #263B50;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+  box-sizing: border-box;
+}
+
+/* Coach photograph area */
+.about-photo-section {
+  grid-area: photo;
+  padding: 0;
+  overflow: hidden;
 }
 
 .coach-photo {
   display: block;
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: none;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  object-position: center;
   margin: 0;
-  border: 3px solid #263B50;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
 }
 
+/* Coach biography area */
+.about-biography {
+  grid-area: biography;
+}
+
+.about-biography h1 {
+  margin-top: 0;
+}
+
+.about-biography h2 {
+  margin-bottom: 16px;
+}
+
+.personal-description {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Services area */
+.services-section {
+  grid-area: services;
+}
+
+.services-section h2 {
+  margin-top: 0;
+}
+
+/* Rink locations area */
+.locations-section {
+  grid-area: locations;
+}
+
+.locations-section h2 {
+  margin-top: 0;
+}
+
+/* Lists used inside the About page Grid */
+.about-grid .services-list,
+.about-grid .locations-list {
+  margin: 16px 0;
+}
+
+/* Coaching video area */
 .video-section {
-  flex: 0 1 315px;
+  grid-area: video;
+  text-align: center;
 }
 
-.video-section h3 {
+.video-section h2 {
   margin-top: 0;
 }
 
 .resume-video {
   display: block;
   width: 100%;
-  max-width: 315px;
-  height: 420px;
-  object-fit: cover;
-  margin: 0;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
   border: 3px solid #263B50;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+}
+
+/* About Page Tablet Layout */
+@media screen and (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "photo biography"
+      "services services"
+      "locations video";
+    gap: 20px;
+  }
+
+  .coach-photo {
+    min-height: 360px;
+  }
+
+  .resume-video {
+    max-width: 100%;
+  }
+}
+
+/* About Page Mobile Layout */
+@media screen and (max-width: 650px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "biography"
+      "services"
+      "locations"
+      "video";
+    margin: 24px auto;
+    padding: 0 15px;
+  }
+
+  .about-grid > section {
+    padding: 20px;
+  }
+
+  .about-photo-section {
+    padding: 0;
+  }
+
+  .coach-photo {
+    height: auto;
+    min-height: 0;
+  }
 }
 
 /* Hide print-only content on the regular webpage */
@@ -146,16 +264,33 @@ ul li {
 @media print {
   .about-page header,
   .about-page h2,
-  .about-page .about-media,
-  .about-page .services-heading,
-  .about-page .services-list,
-  .about-page .services-description,
+  .about-page .about-photo-section,
+  .about-page .services-section,
+  .about-page .locations-section,
+  .about-page .video-section,
   .about-page .screen-only {
     display: none;
   }
 
   .about-page .print-only {
     display: block;
+  }
+
+  .about-page .about-grid {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-page .about-biography {
+    display: block;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
   }
 
   .about-page,
