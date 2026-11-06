@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
-    Name: Olivia Eaton
-    Date: 9/21
-    Course: Web Design And Development
-    Description: HTML Boilerplate Template
-  -->
+<!--
+  Name: Olivia Eaton
+  File: Eatontemplate.html
+  Date: 11/5/2026
+  Course: Web Design And Development
+  Description: Reusable HTML template for the Liv to Skate website
+-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,14 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Resources</a></li>
+        <li class="dropdown">
+          <a href="reflection.html">Reflection ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="reflection.html#goals">Coaching Goals</a></li>
+            <li><a href="reflection.html#experience">Experience</a></li>
+            <li><a href="reflection.html#future">Future Goals</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -33,7 +41,7 @@
     <h1>Liv to Skate</h1>
     <!-- Footer contains the author and current date -->
     <footer>
-      <p>Olivia Eaton | September 21, 2026</p>
+      <p>Olivia Eaton | November 5, 2026</p>
       <p class="contact-item"><img class="contact-icon" src="phone-icon.png" alt="Phone icon"> Phone: 314-347-5895</p>
       <p class="contact-item"><img class="contact-icon" src="email-icon.png" alt="Email icon"> Email: liv2skatee@gmail.com</p>
     </footer>
