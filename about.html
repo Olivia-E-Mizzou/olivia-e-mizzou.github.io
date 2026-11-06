@@ -3,7 +3,7 @@
   <!--
     Name: Olivia Eaton
     File: about.html
-    Date: 10/18/2026
+    Date: 11/5/2026
     Course: Web Design And Development
     Description: About page for the Liv to Skate website
   -->
@@ -36,35 +36,70 @@
         </ul>
       </nav>
     </header>
-    <!-- Main page content will go here -->
-    <h1><span class="screen-only">About the Coach</span><span class="print-only">Olivia Eaton</span></h1>
-  <h2>Meet the Coach</h2>
-  <div class="about-media">
+    <!-- Main About page content uses CSS Grid for its layout -->
+<main class="about-grid">
+  <!-- Coach photograph -->
+  <section class="about-photo-section">
     <img class="coach-photo" src="media/olivia-coach-profile.jpg" alt="Olivia Eaton standing beside the ice rink at the Missouri Tigers ice arena">
-    <div class="video-section">
-      <h3>Coaching Resume</h3>
-      <video class="resume-video" controls aria-label="Olivia Eaton coaching resume video">
-        <source src="media/olivia-resume-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-  <p class="personal-description">As a skater myself, my love for the sport is what drives my passion for coaching. Coaching allows me to motivate athletes and build their confidence to help them grow both on and off the ice while working towards their goals. I work with skaters of all ages and levels and focus on making lessons both productive and encouraging.</p>
+  </section>
+
+  <!-- Coach biography -->
+  <section class="about-biography">
+    <h1>
+      <span class="screen-only">About the Coach</span>
+      <span class="print-only">Olivia Eaton</span>
+    </h1>
+
+    <h2>Meet the Coach</h2>
+
+    <p class="personal-description">As a skater myself, my love for the sport is what drives my passion for coaching. Coaching allows me to motivate athletes and build their confidence to help them grow both on and off the ice while working towards their goals. I work with skaters of all ages and levels and focus on making lessons both productive and encouraging.</p>
+
     <ul class="education-details print-only">
       <li>University of Missouri</li>
       <li>Web Design and Development coursework</li>
     </ul>
-    <h3 class="services-heading">Services</h3>
+  </section>
+
+  <!-- Services overview -->
+  <section class="services-section">
+    <h2 class="services-heading">Services Overview</h2>
+
     <ul class="services-list">
       <li>Private Figure-Skating Lessons</li>
       <li>Hockey-Skills Coaching</li>
       <li>Off-Ice Training</li>
       <li>Choreography</li>
     </ul>
-    <p class="services-description">Liv to Skate offers private figure skating lessons, hockey skills coaching, and off-ice training.</p>
+
+    <p class="services-description">Liv to Skate offers private figure skating lessons, hockey skills coaching, off-ice training, and choreography.</p>
+  </section>
+
+  <!-- Rink locations from the original wireframe -->
+  <section class="locations-section">
+    <h2>Rink Locations</h2>
+
+    <ul class="locations-list">
+      <li>Kirkwood</li>
+      <li>Webster</li>
+      <li>Brentwood</li>
+      <li>Creve Coeur</li>
+      <li>Centene</li>
+    </ul>
+  </section>
+
+  <!-- Coaching introduction video -->
+  <section class="video-section">
+    <h2>Coaching Resume</h2>
+
+    <video class="resume-video" controls aria-label="Olivia Eaton coaching resume video">
+      <source src="media/olivia-resume-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+</main>
     <!-- Footer contains the author and current date -->
     <footer>
-      <span class="screen-only">Olivia Eaton | October 18, 2026</span>
+      <span class="screen-only">Olivia Eaton | November 5, 2026</span>
       <span class="print-only">Email: liv2skatee@gmail.com</span>
       <span class="print-only">Phone: 314-347-5895</span>
       <span class="print-only">Website: olivia-e-mizzou.github.io</span>
