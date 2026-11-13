@@ -3,7 +3,7 @@
   <!--
     Name: Olivia Eaton
     File: contact.html
-    Date: 11/1/2026
+    Date: 11/12/2026
     Course: Web Design And Development
     Description: Contact page for the Liv to Skate website
   -->
@@ -18,92 +18,111 @@
   </head>
   <body class="contact-page">
     <!-- Header will contain the logo and navigation -->
-  <header>
-    <img src="logo.png" alt="Liv to Skate logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li class="dropdown">
-          <a href="reflection.html">Reflection ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="reflection.html#goals">Coaching Goals</a></li>
-            <li><a href="reflection.html#experience">Experience</a></li>
-            <li><a href="reflection.html#future">Future Goals</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <img src="logo-transparent.png" alt="Liv to Skate logo">
+
+      <!-- Mobile navigation control -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <span aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </label>
+  
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+  
+          <li class="dropdown">
+            <a href="project.html">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="project.html#figure-skating">Figure Skating</a></li>
+              <li><a href="project.html#hockey-skills">Hockey Skills</a></li>
+              <li><a href="project.html#off-ice-training">Off-Ice Training</a></li>
+              <li><a href="project.html#choreography">Choreography</a></li>
+            </ul>
+          </li>
+  
+          <li class="dropdown">
+            <a href="reflection.html">Reflection ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="reflection.html#goals">Coaching Goals</a></li>
+              <li><a href="reflection.html#experience">Experience</a></li>
+              <li><a href="reflection.html#future">Future Goals</a></li>
+            </ul>
+          </li>
+  
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Main contact page content -->
-  <main class="contact-content">
-    <h1>Contact Liv to Skate</h1>
-    <p>Complete the form below to ask a question or learn more about skating lessons.</p>
+    <main class="contact-content">
+      <h1>Contact Liv to Skate</h1>
+      <p>Complete the form below to ask a question or learn more about skating lessons.</p>
+  
+      <!-- Contact form -->
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" name="title" required>
+            <option value="" disabled selected>Select your title</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+            <option value="mx">Mx.</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter your full name"
+            required>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required>
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Enter your message"
+            required></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="figure-skating">Private Figure-Skating Lessons</option>
+            <option value="hockey">Hockey-Skills Coaching</option>
+            <option value="off-ice">Off-Ice Training</option>
+            <option value="choreography">Choreography</option>
+          </select>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </main>
 
-    <!-- Contact form -->
-    <form class="contact-form" action="#" method="post">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <select id="title" name="title" required>
-          <option value="" disabled selected>Select your title</option>
-          <option value="mr">Mr.</option>
-          <option value="ms">Ms.</option>
-          <option value="mrs">Mrs.</option>
-          <option value="dr">Dr.</option>
-          <option value="mx">Mx.</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          id="full-name"
-          name="full-name"
-          placeholder="Enter your full name"
-          required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email address"
-          required>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="Enter your message"
-          required></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="service">Service of Interest</label>
-        <select id="service" name="service" required>
-          <option value="" disabled selected>Select a service</option>
-          <option value="figure-skating">Private Figure-Skating Lessons</option>
-          <option value="hockey">Hockey-Skills Coaching</option>
-          <option value="off-ice">Off-Ice Training</option>
-          <option value="choreography">Choreography</option>
-        </select>
-      </div>
-
-      <button type="submit">Submit</button>
-    </form>
-  </main>
-
-  <!-- Footer contains the author and current date -->
+    <!-- Footer contains the author and current date -->
     <footer>
-      <p>Olivia Eaton | November 1, 2026</p>
+      <p>Olivia Eaton | November 12, 2026</p>
       <p class="contact-item"><img class="contact-icon" src="phone-icon.png" alt="Phone icon"> Phone: 314-347-5895</p>
       <p class="contact-item"><img class="contact-icon" src="email-icon.png" alt="Email icon"> Email: liv2skatee@gmail.com</p>
     </footer>
