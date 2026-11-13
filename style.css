@@ -494,3 +494,146 @@ ul li {
     padding: 18px;
   }
 }
+
+/* Services Project Page Grid Layout */
+.services-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.services-introduction {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-introduction h1 {
+  margin-bottom: 12px;
+}
+
+.services-introduction p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #263B50;
+  line-height: 1.6;
+}
+
+/* Two-column service layout for larger screens */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background-color: #F4F8FB;
+  padding: 24px;
+  border: 2px solid #263B50;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(38, 59, 80, 0.25);
+  box-sizing: border-box;
+  scroll-margin-top: 20px;
+}
+
+.service-card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  line-height: 1.6;
+}
+
+.service-artifact {
+  margin-top: 20px;
+}
+
+.service-artifact h3 {
+  color: #263B50;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-artifact ul {
+  margin: 0;
+  padding: 18px 18px 18px 42px;
+}
+
+/* Highlight a service reached through an anchor link */
+.service-card:target {
+  outline: 4px solid #AFCBDF;
+  outline-offset: 4px;
+}
+
+/* Services Project Page Footer */
+.project-page footer {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.65), rgba(175, 203, 223, 0.65)),
+    url("media/footer-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #263B50;
+  padding: 24px;
+  margin-top: 40px;
+  border-top: 3px solid #263B50;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.project-page footer p {
+  color: #263B50;
+  margin: 8px 0;
+}
+
+.project-page .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-page .contact-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Services Project Page Mobile Layout */
+@media screen and (max-width: 600px) {
+  .services-content {
+    margin: 24px auto;
+    padding: 0 15px;
+  }
+
+  .services-introduction h1 {
+    font-size: 32px;
+  }
+
+  .services-introduction p {
+    font-size: 16px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card h2 {
+    font-size: 24px;
+  }
+
+  .service-card p,
+  .service-artifact ul {
+    font-size: 16px;
+  }
+
+  .project-page footer {
+    padding: 18px;
+  }
+}
