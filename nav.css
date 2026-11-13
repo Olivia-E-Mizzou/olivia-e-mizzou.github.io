@@ -147,4 +147,12 @@ nav .dropdown-menu a {
     white-space: normal;
     font-size: 15px;
   }
+
+  /* Hide dropdown submenus on the template's mobile view */
+  .template-page nav .dropdown-menu,
+  .template-page nav .dropdown:hover .dropdown-menu,
+  .template-page nav .dropdown:focus-within .dropdown-menu {
+    display: none;
+  }
 }
+
