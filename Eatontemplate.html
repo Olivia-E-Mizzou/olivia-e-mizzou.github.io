@@ -3,7 +3,7 @@
 <!--
   Name: Olivia Eaton
   File: Eatontemplate.html
-  Date: 11/5/2026
+  Date: 11/12/2026
   Course: Web Design And Development
   Description: Reusable HTML template for the Liv to Skate website
 -->
@@ -18,30 +18,49 @@
   </head>
   <body class="template-page">
     <!-- Header will contain the logo and navigation -->
-  <header>
-    <img src="logo.png" alt="Liv to Skate logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li class="dropdown">
-          <a href="reflection.html">Reflection ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="reflection.html#goals">Coaching Goals</a></li>
-            <li><a href="reflection.html#experience">Experience</a></li>
-            <li><a href="reflection.html#future">Future Goals</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <img src="logo-transparent.png" alt="Liv to Skate logo">
+
+      <!-- Mobile navigation control -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <span aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="project.html">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="project.html#figure-skating">Figure Skating</a></li>
+              <li><a href="project.html#hockey-skills">Hockey Skills</a></li>
+              <li><a href="project.html#off-ice-training">Off-Ice Training</a></li>
+              <li><a href="project.html#choreography">Choreography</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="reflection.html">Reflection ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="reflection.html#goals">Coaching Goals</a></li>
+              <li><a href="reflection.html#experience">Experience</a></li>
+              <li><a href="reflection.html#future">Future Goals</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Main page content will go here -->
     <h1>Liv to Skate</h1>
     <!-- Footer contains the author and current date -->
     <footer>
-      <p>Olivia Eaton | November 5, 2026</p>
+      <p>Olivia Eaton | November 12, 2026</p>
       <p class="contact-item"><img class="contact-icon" src="phone-icon.png" alt="Phone icon"> Phone: 314-347-5895</p>
       <p class="contact-item"><img class="contact-icon" src="email-icon.png" alt="Email icon"> Email: liv2skatee@gmail.com</p>
     </footer>
