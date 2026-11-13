@@ -1,3 +1,9 @@
+/*
+  Name: Olivia Eaton
+  File: nav.css
+  Date: 11/12/2026
+  Description: Responsive navigation styles for the Liv to Skate website
+*/
 header {
   display: flex;
   flex-wrap: wrap;
@@ -63,4 +69,82 @@ nav .dropdown:focus-within .dropdown-menu {
 nav .dropdown-menu a {
   display: block;
   white-space: nowrap;
+}
+
+/* Hide the mobile navigation controls on larger screens */
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-button {
+  display: none;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 16px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #263B50;
+    color: #FFFFFF;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-toggle:checked ~ nav {
+    display: block;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  nav > ul > li {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: 12px;
+  }
+
+  nav .dropdown-menu {
+    display: block;
+    position: static;
+    min-width: 0;
+    margin: 0 0 8px 16px;
+    padding: 0;
+    border: none;
+    border-left: 3px solid #AFCBDF;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  nav .dropdown-menu a {
+    padding: 9px 12px 9px 20px;
+    white-space: normal;
+    font-size: 15px;
+  }
 }
