@@ -195,7 +195,7 @@ ul li {
 .resume-video {
   display: block;
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: auto;
   margin: 0 auto;
   border: 3px solid #263B50;
