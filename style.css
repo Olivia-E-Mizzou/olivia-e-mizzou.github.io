@@ -573,7 +573,59 @@ ul li {
   outline: 4px solid #AFCBDF;
   outline-offset: 4px;
 }
+/* Responsive Service Comparison Table */
+.lesson-table-section {
+  margin-top: 40px;
+}
 
+.lesson-table-section h2 {
+  text-align: center;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.services-table {
+  width: 100%;
+  border: 3px solid #263B50;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.services-table caption {
+  caption-side: top;
+  color: #263B50;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.services-table th,
+.services-table td {
+  padding: 14px;
+  border: 1px solid #263B50;
+  text-align: left;
+}
+
+.services-table thead th {
+  background-color: #263B50;
+  color: #FFFFFF;
+}
+
+.services-table tbody th {
+  color: #263B50;
+}
+
+.services-table tbody tr:nth-child(odd) {
+  background-color: #AFCBDF;
+}
+
+.services-table tbody tr:nth-child(even) {
+  background-color: #F4F8FB;
+}
 /* Services Project Page Footer */
 .project-page footer {
   background-image:
@@ -639,6 +691,16 @@ ul li {
     font-size: 16px;
   }
 
+  .services-table {
+    min-width: 620px;
+    font-size: 14px;
+  }
+
+  .services-table th,
+  .services-table td {
+    padding: 10px;
+  }
+  
   .project-page footer {
     padding: 18px;
   }
