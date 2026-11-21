@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
   </head>
-  <body>
+  <body class="home-page">
     <!-- Header will contain the logo and navigation -->
     <header>
       <img src="logo-transparent.png" alt="Liv to Skate logo">
@@ -55,16 +55,50 @@
         </ul>
       </nav>
     </header>
-    <!-- Main page content will go here -->
-    <section class="hero">
-      <h1>Liv to Skate</h1>
-      <blockquote>Find your edge, build your confidence, Liv to Skate.</blockquote>
-      <h2>Helping Athletes Reach Their Full Potential</h2>
-      <p>Helping figure skaters and hockey players build their skills, confidence, and love for the ice.</p>
-      <a href="#">Book a Lesson</a>
-    </section>
-    <h3>Coaching for Figure Skaters and Hockey Players</h3>
-    <p>Liv to Skate offers private figure skating lessons, hockey skills coaching, and off-ice training.</p>
+    <!-- Main homepage content -->
+    <main class="home-content">
+      <section class="hero">
+        <p class="hero-eyebrow">Personalized Skating Coaching</p>
+        <h1>Build Confidence on the Ice</h1>
+        <blockquote>Find your edge, build your confidence, Liv to Skate.</blockquote>
+        <p>Helping figure skaters and hockey players build their skills, confidence, and love for the ice.</p>
+        <a class="hero-button" href="contact.html">Book a Lesson</a>
+      </section>
+  
+      <section class="home-services" aria-labelledby="home-services-heading">
+        <h2 id="home-services-heading">Coaching for Every Skater</h2>
+        <p>Choose personalized training based on your experience, goals, and interests.</p>
+  
+        <div class="home-service-grid">
+          <article class="home-service-card">
+            <h3>Figure Skating</h3>
+            <p>Develop strong fundamentals, refine technique, and build confidence on the ice.</p>
+            <a href="project.html#figure-skating">Learn More</a>
+          </article>
+  
+          <article class="home-service-card">
+            <h3>Hockey Skills</h3>
+            <p>Improve speed, edge control, stops, direction changes, and overall skating ability.</p>
+            <a href="project.html#hockey-skills">Learn More</a>
+          </article>
+  
+          <article class="home-service-card">
+            <h3>Off-Ice Training</h3>
+            <p>Build the strength, balance, flexibility, and coordination needed for skating.</p>
+            <a href="project.html#off-ice-training">Learn More</a>
+          </article>
+        </div>
+      </section>
+  
+      <section class="home-coach">
+        <img src="media/olivia-coach-profile.jpg" alt="Olivia Eaton standing beside the ice rink">
+        <div>
+          <h2>Meet the Coach</h2>
+          <p>Olivia provides productive and encouraging lessons for skaters of different ages, experience levels, and goals.</p>
+          <a href="about.html">Learn About Olivia</a>
+        </div>
+      </section>
+    </main>
     <!-- Footer contains the author and current date -->
     <footer>
       <p>Olivia Eaton | November 12, 2026</p>
