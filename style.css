@@ -98,6 +98,28 @@ h2 {
   line-height: 1.6;
 }
 
+.home-page .hero-button {
+  padding: 15px 32px;
+  border: 2px solid #263B50;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 8px rgba(38, 59, 80, 0.25);
+  transition: background-color 0.25s ease, color 0.25s ease,
+    box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.home-page .hero-button:hover,
+.home-page .hero-button:focus {
+  background-color: #263B50;
+  color: #FFFFFF;
+  outline: 3px solid #AFCBDF;
+  outline-offset: 3px;
+  box-shadow: 0 0 12px rgba(38, 59, 80, 0.55);
+  transform: translateY(-2px);
+}
+
 .home-services {
   margin-bottom: 40px;
   text-align: center;
